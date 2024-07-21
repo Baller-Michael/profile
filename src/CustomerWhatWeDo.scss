@@ -1,0 +1,71 @@
+.customer-about {
+	padding: 110px 15px;
+	background-color: #f7f8f9;
+	@media (max-width: $screen-xs-max) {
+		padding: 60px 15px;
+	}
+	.title {
+		font-size: 30px;
+		position: relative;
+		padding: 33px 0 26px 0;
+		margin: 0;
+		@include top-line;
+		@media (max-width: 500px) {
+			padding-bottom: 14px;
+		}
+	}
+	.btn-container {
+		display: flex;
+		@media (max-width: 1000px) {
+			flex-direction: column;
+			align-items: start;
+			margin-right: 5px;
+		}
+		.btn {
+			margin: 0;
+			@media (max-width: 1000px) {
+				margin: 10px 0;
+			}
+		}
+	}
+}
+.customer-about-figure {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 -15px;
+}
+.customer-about-figcaption {
+	width: 50%;
+	padding: 15px 27px;
+	.btn {
+		margin-top: 50px;
+	}
+	@media (max-width: 1000px) {
+		width: 100%;
+		order: 2;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+.customer-about-description {
+	color: #242424;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 35px;
+	padding-bottom: 50px;
+	margin: 0;
+	font-family: 'Open Sans' !important;
+}
+.customer-about-img-wrap {
+	width: 40%;
+	@media (max-width: 1000px) {
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	img {
+		width: 100%;
+	}
+}

@@ -1,0 +1,59 @@
+$wisconsin-feature-red: #c5050c;
+$cambridge-feature-red: #d50032;
+
+
+$wisconsin-font-title: 'Verlag Bold', 'Open Sans', 'Helvetica Neue', sans-serif;
+$screen-xs-max: 750px !default; 
+$screen-sm-min: 750px !default;  
+$screen-sm-max: 750px !default;  
+
+
+@font-face {
+	font-family: 'Verlag Bold';
+	// src: url('/assets/fonts/custom-fonts/verlag-font/verlag-bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Verlag Book';
+	// src: url('/assets/fonts/custom-fonts/verlag-font/verlag-book.woff2') format('woff2');
+}
+
+$wisconsin-font-title: 'Verlag Bold', 'Open Sans', 'Helvetica Neue', sans-serif;
+$wisconsin-font-description: 'Verlag Book', 'Open Sans', 'Helvetica Neue', sans-serif;
+
+@mixin top-line {
+	&:before {
+		content: '';
+		width: 48px;
+		height: 7px;
+		background-color: $wisconsin-feature-red;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+@mixin top-line-center {
+	&:before {
+		content: '';
+		width: 48px;
+		height: 7px;
+		background-color: #ffffff;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@mixin top-line-center-red {
+	&:before {
+		content: '';
+		width: 48px;
+		height: 7px;
+		background-color: $wisconsin-feature-red;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

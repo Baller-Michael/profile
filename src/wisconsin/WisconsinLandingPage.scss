@@ -1,0 +1,276 @@
+
+.wisconsin-page {
+	background: #fff;
+	.page-container {
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+	h1,
+	h2 {
+		font-family: $wisconsin-font-title;
+		font-weight: 700;
+		color: #242424;
+	}
+	button {
+		font-family: 'Open Sans';
+		border-radius: 4px;
+	}
+	h3 {
+		font-family: $wisconsin-font-description;
+	}
+	.-logged-out {
+		height: 100px;
+		border-top: 3px solid $wisconsin-feature-red;
+	}
+	.header-logo {
+		height: 80px;
+	}
+	.log-in-border {
+		border: 1px solid $wisconsin-feature-red;
+		color: $wisconsin-feature-red;
+	}
+	.top-section {
+		padding: 170px 15px;
+		max-height: 658px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		@media (min-width: $screen-sm-min) {
+			min-height: 450px;
+		}
+		.btn {
+			margin-top: 20px;
+		}
+		.page-container {
+			position: relative;
+			z-index: 1;
+		}
+	}
+	.top-title {
+		text-shadow: 0 0 9px rgba(0, 0, 0, 0.89);
+		color: #ffffff;
+		font-family: $wisconsin-font-title;
+		font-size: 70px;
+		font-weight: 700;
+		@media (max-width: $screen-xs-max) {
+			font-size: 30px;
+		}
+		@include top-line;
+	}
+	.top-description {
+		text-shadow: 0 0 9px rgba(0, 0, 0, 0.89);
+		color: #ffffff;
+		font-size: 25px;
+		max-width: 650px;
+		margin: 5px;
+		text-align: left;
+		@media (max-width: $screen-xs-max) {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+	.link-to-join {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	.text-section {
+		color: #ffffff;
+		font-size: 20px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+		background-color: $wisconsin-feature-red;
+		p {
+			max-width: 800px;
+			margin: 0 auto;
+			padding-bottom: 50px;
+			padding: 0 5px 0px 5px;
+			@media (max-width: 500px) {
+				padding: 0 10px 50px 10px;
+			}
+			&:first-child {
+				padding-top: 33px;
+				position: relative;
+				&:before {
+					content: '';
+					width: 48px;
+					height: 7px;
+					background-color: #ffffff;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+	.customer-title {
+		padding: 25px 0 26px 0;
+		@include top-line-center-red;
+	}
+	.communities {
+		border-bottom: 1px solid $wisconsin-feature-red;
+		.link-to-join {
+			@media (max-width: 500px) {
+				margin-top: 50px;
+			}
+		}
+		.communities-list {
+			justify-content: center;
+			.descr {
+				color: #434445;
+				font-size: 15px;
+				line-height: 1.5;
+			}
+			.circle-columns {
+				padding: 0;
+				margin: 25px;
+				.community-title {
+					color: #282828;
+					font-size: 21px;
+					font-weight: 700;
+				}
+				img {
+					max-width: 350px;
+					@media (max-width: 500px) {
+						max-width: 300px;
+					}
+				}
+			}
+			.images-descr-5 {
+				max-width: 360px;
+			}
+		}
+		.view-button {
+			background-color: #0a78a9;
+			border: 0;
+			color: #fff;
+		}
+	}
+	.customer-communities--figure img {
+		border-radius: 10px;
+	}
+	.title {
+		font-size: 30px;
+		position: relative;
+		padding: 33px 0 26px 0;
+		margin: 0;
+		@include top-line;
+		@media (max-width: 500px) {
+			padding-bottom: 14px;
+		}
+	}
+	.customer-about {
+		background-color: #ffffff;
+		border-bottom: 1px solid $wisconsin-feature-red;
+	}
+}
+
+.landing-banner {
+	width: 100%;
+	@media (max-width: 500px) {
+		width: auto;
+		height: 250px;
+		z-index: 1;
+		transform: translate(-28%);
+	}
+}
+// .-not-logged-in {
+// 	margin-top: 52px;
+// }
+
+.communities {
+	padding: 100px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media (max-width: $screen-xs-max) {
+		padding: 60px 15px;
+	}
+	.customer-title {
+		font-size: 30px;
+		margin-bottom: 60px;
+		text-align: center;
+		position: relative;
+	}
+	.communities-list {
+		display: flex;
+		margin: auto;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		justify-content: space-evenly;
+		margin: -20px -15px;
+		.circle-columns {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 25px;
+			.community-title {
+				color: #242424;
+				font-size: 20px;
+				font-weight: 400;
+				margin: 20px 0 15px 0;
+				flex-grow: 1;
+			}
+			img {
+				max-width: 255px;
+			}
+		}
+		.descr {
+			font-size: 16px;
+			text-align: center;
+			color: #4d4d4d;
+			max-width: 250px;
+			height: 100px;
+			font-family: 'Open Sans';
+			@media (max-width: $screen-sm-max) {
+				height: 60px;
+			}
+		}
+		.images-descr-3 {
+			max-width: 360px;
+		}
+		.images-descr-5,
+		.images-descr-2 {
+			max-width: 350px;
+		}
+		&.-small-items {
+			margin: -15px -10px;
+			@media (max-width: $screen-sm-max) {
+				max-width: 625px;
+			}
+			.circle-columns {
+				padding: 15px 10px;
+				width: 14.285%;
+				@media (max-width: $screen-sm-max) {
+					width: 25%;
+				}
+				@media (max-width: 650px) {
+					width: 100%;
+				}
+			}
+			.circle {
+				img {
+					width: 100%;
+				}
+			}
+			.community-title {
+				font-size: 18px;
+				margin: 5px 0 10px 0;
+				text-align: center;
+				font-weight: 400;
+			}
+			.btn {
+				font-size: 16px;
+			}
+		}
+	}
+	.link-to-join {
+		text-align: center;
+	}
+}

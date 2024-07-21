@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import CambridgeLandingPage from "./cambridge/CambridgeLandingPage";
-// import CambridgeStakeholderPages from "./cambridge/CambridgeStakeholderPages";
-// import WisconsinLandingPage from "./wisconsin/WisconsinLandingPage";
-// import WisconsinStakeholderPages from "./wisconsin/WisconsinStakeholderPages";
+import CambridgeLandingPage from "./cambridge/CambridgeLandingPage";
+import CambridgeStakeholderPages from "./cambridge/CambridgeStakeholderPages";
+import WisconsinLandingPage from "./wisconsin/WisconsinLandingPage";
+import WisconsinStakeholderPages from "./wisconsin/WisconsinStakeholderPages";
 import MyProfile from "./MyProfile";
 import "./App.css";
-// import "./wisconsin/WisconsinLandingPage.scss";
-// import "./cambridge/CambridgeLandingPage.scss";
-// import "./wisconsin/WisconsinFooter.scss";
-// import "./wisconsin/WisconsinStakeholderPages.scss";
-// import "./wisconsin/WisconsinStakeholderTopSection.scss";
-// import "./CustomerCommunities.scss";
-// import "./CustomerFAQs.scss";
-// import "./CustomerKeyFeatures.scss";
-// import "./CustomerWhatWeDo.scss";
+import "./wisconsin/WisconsinLandingPage.scss";
+import "./cambridge/CambridgeLandingPage.scss";
+import "./wisconsin/WisconsinFooter.scss";
+import "./wisconsin/WisconsinStakeholderPages.scss";
+import "./wisconsin/WisconsinStakeholderTopSection.scss";
+import "./CustomerCommunities.scss";
+import "./CustomerFAQs.scss";
+import "./CustomerKeyFeatures.scss";
+import "./CustomerWhatWeDo.scss";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,22 +22,22 @@ function App() {
       path: "/profile/",
       element: <MyProfile />,
     },
-    // {
-    //   path: "/cam",
-    //   element: <CambridgeLandingPage />,
-    // },
-    // {
-    //   path: "/cam/:activePage",
-    //   element: <CambridgeStakeholderPages />,
-    // },
-    // {
-    //   path: "/uwmadison-cals",
-    //   element: <WisconsinLandingPage />,
-    // },
-    // {
-    //   path: "/uwmadison-cals/:activePage",
-    //   element: <WisconsinStakeholderPages />,
-    // },
+    {
+      path: "/profile/cam",
+      element: <CambridgeLandingPage />,
+    },
+    {
+      path: "/profile/cam/:activePage",
+      element: <CambridgeStakeholderPages />,
+    },
+    {
+      path: "/profile/uwmadison-cals",
+      element: <WisconsinLandingPage />,
+    },
+    {
+      path: "/profile/uwmadison-cals/:activePage",
+      element: <WisconsinStakeholderPages />,
+    },
   ]);
 
   return (
@@ -50,17 +50,17 @@ function App() {
           </div> */}
           <ul className="navigation-list" id="navigation">
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="/profile/">
                 About me
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/cam">
+              <a className="nav-link" href="/profile/cam">
                 Cambridge
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/uwmadison-cals">
+              <a className="nav-link" href="/profile/uwmadison-cals">
                 Wisconsin
               </a>
             </li>

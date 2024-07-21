@@ -1,0 +1,135 @@
+.wisconsin-page {
+	.stakeholder-title {
+		color: #282828;
+		font-size: 17px;
+		text-align: center;
+		align-items: center;
+		display: flex;
+		flex-grow: 1;
+	}
+	.customer-faqs {
+		.accordion-btn-title {
+			color: $wisconsin-feature-red;
+		}
+		.caret {
+			color: $wisconsin-feature-red;
+		}
+	}
+	.customer-key-features {
+		.accordion-btn-title {
+			color: $wisconsin-feature-red;
+			font-size: 25px;
+			font-weight: 700;
+			font-family: $wisconsin-font-description;
+		}
+		.caret {
+			color: $wisconsin-feature-red;
+		}
+	}
+	.wisconsin-footer2 {
+		background-color: #373737;
+		padding: 3em;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: self-end;
+		@media (max-width: 500px) {
+			padding: 1rem;
+		}
+		.wisconsin-footer-logo {
+			margin-top: -3em;
+			@media (max-width: 1170px) {
+				margin-top: 3em;
+			}
+		}
+		.footer-tables {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+			ul {
+				list-style: none;
+				margin-bottom: 4em;
+				height: auto;
+				min-width: 200px;
+				margin-right: 5%;
+				margin-top: 3em;
+				a {
+					color: #9e9e9e;
+					font-size: 15px;
+				}
+			}
+		}
+
+		.footer__links-list li {
+			margin-bottom: 0.7em;
+		}
+		.footer__title {
+			font-size: 18px;
+			font-weight: 700;
+			margin-top: 0;
+			margin-bottom: 1.5em;
+			color: hsla(0, 0%, 100%, 0.8);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.footer-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			width: 70%;
+		}
+		.footer__social {
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+
+			.footer__social-wl {
+				display: flex;
+				flex-wrap: wrap;
+				@media (max-width: 700px) {
+					width: 50%;
+					padding: 0;
+					justify-content: center;
+				}
+			}
+			.footer-wl-info {
+				margin-top: -4px;
+				margin-left: 50px;
+				@media (max-width: 700px) {
+					margin-top: 10px;
+					margin-left: 0;
+				}
+			}
+			.footer-wl-logo {
+				margin-left: 5px;
+				height: 30px;
+				opacity: 0.6;
+				@media (max-width: 700px) {
+					height: 23px;
+				}
+			}
+			.copyright {
+				color: #767676;
+				font-size: 16px;
+				flex: 1;
+				text-align: center;
+				transform: translateX(-50px);
+				@media (max-width: 700px) {
+					width: 40%;
+					transform: translateX(0);
+				}
+			}
+			.footer__social-list {
+				display: flex;
+				list-style: none;
+				@media (max-width: 700px) {
+					padding: 0;
+				}
+				.fa-fw {
+					color: #767676;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

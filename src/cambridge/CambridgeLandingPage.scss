@@ -1,0 +1,399 @@
+.cambridge-page {
+	font-family: 'Open Sans';
+	.top-subtitle,
+	.title,
+	.top-title,
+	.community-title,
+	.customer-title,
+	h3 {
+		font-family: 'Open Sans';
+	}
+	.gen-header {
+		border-top: 0;
+		.header-logo {
+			height: 63px;
+			margin: 18px 0;
+		}
+		@media (max-width: 550px) {
+			.page-container {
+				align-items: baseline;
+			}
+			.header-logo {
+				width: 122px;
+				height: 26px;
+			}
+		}
+		@media (max-width: 320px) {
+			.header-logo {
+				width: 90px;
+			}
+		}
+	}
+	.-logged-out {
+		border-top: 0;
+	}
+	.customer-title,
+	.title {
+		font-weight: 600;
+		font-size: 26px !important;
+		margin-top: 0 !important;
+		margin-bottom: 50px !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	.top-title {
+		font-weight: 600;
+		font-size: 55px;
+		@media (max-width: 550px) {
+			font-size: 37px;
+		}
+	}
+	.top-subtitle {
+		color: #fff;
+		font-size: 40px;
+		font-weight: 600;
+		text-shadow: 0 0 9px rgba(0, 0, 0, 0.89);
+		margin-bottom: 35px;
+		@media (max-width: 550px) {
+			font-size: 18px;
+		}
+	}
+	.top-description {
+		max-width: 900px;
+		margin: auto;
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 22px;
+		font-weight: 300;
+		@media (max-width: 550px) {
+			font-size: 13px;
+		}
+	}
+	.title {
+		&:before {
+			display: none;
+		}
+	}
+	.top-section .page-container {
+		.top-title:before {
+			display: none;
+		}
+	}
+	.customer-about {
+		padding: 60px 15px;
+		border-bottom: 0;
+		background-color: #f7f7f7;
+		.customer-about-description {
+			max-width: 600px;
+		}
+	}
+	.container-color {
+		background-color: #fff;
+	}
+	.partners {
+		margin-top: 60px;
+		margin-bottom: 35px;
+	}
+	.affiliations-section {
+		background: #fff;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		img {
+			margin: 30px 20px;
+			max-width: 340px;
+			@media (max-width: 550px) {
+				max-width: 300px;
+				margin: 10px;
+			}
+		}
+	}
+	.communities {
+		padding: 70px 15px !important;
+		border-bottom: 1px solid #1184bc;
+		.customer-title {
+			&:before {
+				display: none;
+			}
+		}
+		.communities-list .circle-columns {
+			img {
+				max-width: 255px;
+				@media (max-width: 550px) {
+					max-width: 280px;
+				}
+			}
+			.community-title {
+				flex-grow: 0;
+				font-weight: 600 !important;
+				font-size: 20px !important;
+			}
+			.link-to-join {
+				margin-top: 50px;
+			}
+		}
+	}
+	.customer-communities {
+		padding-top: 70px;
+		padding-bottom: 5px;
+		div .page-container {
+			.customer-title {
+				&:before {
+					display: none;
+				}
+			}
+		}
+		.customer-communities--figcaption {
+			height: 110px;
+			h3 {
+				line-height: 1.6;
+				@media (max-width: 550px) {
+					line-height: normal;
+				}
+			}
+		}
+	}
+	.text-section {
+		background-color: #014270;
+		padding-bottom: 50px;
+		.page-container p {
+			font-size: 23px;
+			max-width: 900px;
+			padding-top: 0;
+			&:before {
+				display: none;
+			}
+		}
+	}
+	.customer-key-features {
+		font-family: 'Open Sans';
+		.accordion-row .accordion-column {
+			max-width: 550px;
+		}
+		.accordion-row {
+			margin-bottom: 0 !important;
+		}
+		.title {
+			text-align: center;
+		}
+		.accordion-btn-title {
+			font-size: 20px;
+			font-weight: 600;
+			font-family: inherit;
+			color: #1184bc;
+		}
+		.caret {
+			color: #1184bc;
+		}
+	}
+	.wisconsin-sub-page--about {
+		border-bottom: 1px solid #1184bc;
+		background: #fff;
+		.btn-red-border {
+			color: #d50032;
+			background-color: #fff;
+			border-color: #d50032;
+			box-shadow: 0px 0 5px rgba(0, 0, 0, 0.31);
+			font-size: 20px;
+			font-weight: 400;
+		}
+		.wisconsin-offers {
+			border-bottom: 0;
+		}
+		.quick-facts {
+			box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+			border-bottom: 0;
+			margin-top: 0;
+			transform: translateY(0);
+		}
+		.quick-facts-3 {
+			margin-top: 0;
+			transform: translateY(-30%);
+			@media (max-width: 550px) {
+				margin-top: -100px;
+				transform: translateY(0);
+			}
+		}
+		.quick-facts-4 {
+			margin-top: -150px;
+		}
+		.facts-title {
+			font-family: 'Open Sans';
+			padding-top: 30px;
+			@media (max-width: 550px) {
+				padding-bottom: 20px;
+			}
+		}
+		.fact {
+			font-size: 16px;
+			margin-bottom: 30px !important;
+			font-family: 'Open Sans';
+			strong {
+				font-size: 30px;
+				color: #1184bc;
+				font-weight: 400;
+			}
+		}
+		.btn-container .cambridge-feature-red {
+			margin-right: 15px;
+		}
+	}
+}
+.cambridge-stakeholder-page {
+	.communities-4,
+	.communities-2 {
+		max-width: 1000px;
+		img {
+			max-width: 450px !important;
+			@media (max-width: 550px) {
+				max-width: 300px !important;
+			}
+		}
+	}
+
+	.communities div .page-container .communities-list .circle-columns {
+		.descr {
+			height: auto;
+		}
+		.images-descr-4 {
+			max-width: 400px;
+			height: auto;
+			@media (max-width: 550px) {
+				max-width: 300px;
+			}
+		}
+		.images-descr-5 {
+			max-width: 300px;
+			height: auto;
+		}
+		img {
+			max-width: 350px;
+			@media (max-width: 550px) {
+				max-width: 300px;
+			}
+		}
+	}
+	.wisconsin-sub-page--about {
+		padding: 60px 15px;
+		.wisconsin-sub-page--about-description {
+			color: #434445;
+			line-height: 1.8 !important;
+		}
+	}
+	.stakeholder-title {
+		font-weight: 400;
+		line-height: 1.6;
+		font-size: 16px;
+	}
+}
+.cambridge-footer {
+	background-color: #171717;
+	font-size: 12px;
+	padding: 20px 0;
+	@media (max-width: 550px) {
+		font-size: 16px;
+	}
+	.page-container {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		@media (max-width: 550px) {
+			flex-direction: column;
+		}
+	}
+	li {
+		@media (max-width: 550px) {
+			margin-bottom: 15px;
+		}
+	}
+	.cam-content-container {
+		padding: 0 20px 20px 20px;
+		width: 25%;
+		@media (max-width: 550px) {
+			width: 100%;
+		}
+	}
+	.cam-logo {
+		padding-bottom: 20px;
+		max-width: 100%;
+		height: auto;
+		width: 178px;
+	}
+	a {
+		color: #fff;
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+	h3 {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-weight: 600;
+		@media (max-width: 550px) {
+			font-size: 18px;
+			margin-top: 0;
+		}
+	}
+	p {
+		color: #fff;
+	}
+	ul {
+		padding: 0;
+	}
+	.cam-unstyled-list {
+		list-style: none;
+		line-height: 18px;
+		@media (max-width: 550px) {
+			line-height: 22px;
+		}
+	}
+	.border-left {
+		border-left: 1px dashed #666666;
+	}
+	.link-list {
+		padding: 0 20px 20px 20px;
+		width: 25%;
+		@media (max-width: 550px) {
+			padding: 20px;
+			width: 100%;
+		}
+		height: 210px;
+		h3 {
+			margin-top: 0;
+			@media (max-width: 550px) {
+				margin-bottom: 30px;
+			}
+		}
+		li {
+			padding-bottom: 5px;
+		}
+		@media (max-width: 550px) {
+			padding: 0px 20px 0px 20px;
+			border-left: 0;
+			height: auto;
+		}
+	}
+	.footer-wl {
+		display: flex;
+		align-items: flex-end;
+		position: absolute;
+		right: -70px;
+		bottom: 50px;
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.wl-logo {
+		height: 30px;
+		margin-left: 10px;
+	}
+}
+.text-center {
+	text-align: center;
+}

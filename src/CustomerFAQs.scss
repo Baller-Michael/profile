@@ -1,0 +1,23 @@
+.customer-faqs {
+	background-color: #f9f9f9;
+	.accordion-btn-title {
+		font-size: 21px;
+	}
+	.accordion-column {
+		width: 100%;
+		max-width: 800px;
+	}
+	.accordion-wrap {
+		background-color: #f9f9f9;
+		padding-left: 0px;
+	}
+	.accordion-wrap.-active {
+		box-shadow: none;
+		background-color: #f9f9f9;
+		padding-left: 0px;
+	}
+	.accordion-content {
+		color: #242424;
+		font-size: 18px;
+	}
+}
