@@ -55,7 +55,7 @@ export default function CustomerHeader({
 			<div className="page-container">
 				<Link to={mainLink}>
 					<img
-						src={`src/${
+						src={`/profile/src/${
 							mobileLogoSrc && isMobileView ? mobileLogoSrc : logoSrc
 						}`}
 						alt=""

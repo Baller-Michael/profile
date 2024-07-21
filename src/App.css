@@ -319,7 +319,7 @@ body {
   }
 
   .about-parallax {
-    background-image: url("./public/first-parallax.jpg");
+    background-image: url("/profile/first-parallax.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ body {
   }
 
   .work-education {
-    background-image: url("./public/work-education.jpg");
+    background-image: url("/profile/work-education.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
