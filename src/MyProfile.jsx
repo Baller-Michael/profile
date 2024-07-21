@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function MyProfile() {
+  const baseURL = import.meta.env.BASE_URL;
   return (
     <div className="my-profile">
       <section className="home" id="home">
@@ -62,7 +63,7 @@ export default function MyProfile() {
         <div className="page-container">
           <div className="img-container column">
             <img
-              src="./public/about-me.jpg"
+              src={`${baseURL}/public/about-me.jpg`}
               alt="About me"
               className="about-me-img"
             />
