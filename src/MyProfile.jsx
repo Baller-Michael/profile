@@ -50,7 +50,7 @@ export default function MyProfile() {
             </div>
             <div className="column my-photo">
               <img
-                src="./public/profile.png"
+                src={`${baseURL}/profile.png`}
                 alt="Micahel Pavelchuk"
                 className="michael-photo-1"
               />
@@ -63,7 +63,7 @@ export default function MyProfile() {
         <div className="page-container">
           <div className="img-container column">
             <img
-              src={`${baseURL}/public/about-me.jpg`}
+              src={`${baseURL}/about-me.jpg`}
               alt="About me"
               className="about-me-img"
             />
@@ -192,7 +192,7 @@ export default function MyProfile() {
                         </div>
                     </div> */}
             <div className="work work-animation">
-              <img src="./public/cambridge-logo.jpg" />
+              <img src={`${baseURL}/cambridge-logo.jpg`} />
               <div className="mask mask-1"></div>
               <div className="mask mask-2"></div>
               <div className="content">
@@ -204,7 +204,7 @@ export default function MyProfile() {
               </div>
             </div>
             <div className="work work-animation">
-              <img src="./public/wisconsin.png" />
+              <img src={`${baseURL}/wisconsin.png`} />
               <div className="mask mask-1"></div>
               <div className="mask mask-2"></div>
               <div className="content">
