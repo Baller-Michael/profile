@@ -21,6 +21,7 @@ export default class CambridgeLandingPage extends Component {
 	}
 
 	render() {
+		const baseURL = import.meta.env.BASE_URL;
 		const userId = null;
 		const staticSrcPrefix = null;
 
@@ -50,7 +51,7 @@ export default class CambridgeLandingPage extends Component {
 				<section
 					className="top-section"
 					style={{
-						background: `url(/profile/src/cambridge/landing/cambridge-banner.jpg) center no-repeat`,
+						background: `url(${baseURL}/cambridge/landing/cambridge-banner.jpg) center no-repeat`,
 						backgroundSize: 'cover',
 					}}
 				>
@@ -66,15 +67,15 @@ export default class CambridgeLandingPage extends Component {
 					<h2 className="customer-title text-center">Partners &amp; Supporters</h2>
 					<div className="affiliations-section">
 						<img
-							src={`/profile/src/cambridge/logos/cambridge-research.png`}
+							src={`${baseURL}/cambridge/logos/cambridge-research.png`}
 							alt="Cambridge research"
 						/>
-						<img src={`/profile/src/cambridge/logos/milner.png`} alt="Milner" />
-						<img src={`/profile/src/cambridge/logos/maxwell.png`} alt="Maxwell" />
-						<img src={`/profile/src/cambridge/logos/cyhp.png`} alt="Cyhp" />
-						<img src={`/profile/src/cambridge/logos/ukri.png`} alt="Ukri" />
+						<img src={`${baseURL}/cambridge/logos/milner.png`} alt="Milner" />
+						<img src={`${baseURL}/cambridge/logos/maxwell.png`} alt="Maxwell" />
+						<img src={`${baseURL}/cambridge/logos/cyhp.png`} alt="Cyhp" />
+						<img src={`${baseURL}/cambridge/logos/ukri.png`} alt="Ukri" />
 						<img
-							src={`/profile/src/cambridge/logos/cambridge-academy.png`}
+							src={`${baseURL}/cambridge/logos/cambridge-academy.png`}
 							alt="Cambridge academy"
 						/>
 					</div>

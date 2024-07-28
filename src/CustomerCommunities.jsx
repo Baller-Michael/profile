@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 
 export default function CustomerCommunities({ activeCommunity, communities }) {
 	const staticSrcPrefix = null;
+	const baseURL = import.meta.env.BASE_URL;
 	return (
 		<section className="customer-communities">
 				<div className="page-container">
@@ -20,7 +21,7 @@ export default function CustomerCommunities({ activeCommunity, communities }) {
 								>
 									<figure className="customer-communities--figure">
 										<img
-											src={`src/${community.imgSrc}`}
+											src={`${baseURL}/${community.imgSrc}`}
 											alt={community.title}
 										/>
 										<figcaption className="customer-communities--figcaption">

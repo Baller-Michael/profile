@@ -11,6 +11,7 @@ export default function CustomerList({
 	btnName,
 }) {
 	const staticSrcPrefix = null;
+	const baseURL = import.meta.env.BASE_URL;
 	return (
 		<section className="communities">
 				<div className="page-container">
@@ -30,7 +31,7 @@ export default function CustomerList({
 										<div className="circle-wrap">
 											<div className="circle">
 												<img
-													src={`src/${community.imgSrc}`}
+													src={`${baseURL}/${community.imgSrc}`}
 													alt={community.title}
 												/>
 											</div>

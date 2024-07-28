@@ -45,6 +45,7 @@ export default function CustomerHeader({
 
 	const userId = null;
 	const staticSrcPrefix = null;
+	const baseURL = import.meta.env.BASE_URL;
 
 	return (
 		<header
@@ -55,7 +56,7 @@ export default function CustomerHeader({
 			<div className="page-container">
 				<Link to={mainLink}>
 					<img
-						src={`/profile/src/${
+						src={`${baseURL}/${
 							mobileLogoSrc && isMobileView ? mobileLogoSrc : logoSrc
 						}`}
 						alt=""

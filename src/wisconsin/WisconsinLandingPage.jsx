@@ -34,6 +34,7 @@ export default class WisconsinLandingPage extends Component {
 		const mainLink = '/uwmadison-cals';
 
 		const { title, titleDescription } = topSection;
+		const baseURL = import.meta.env.BASE_URL;
 
 		const joinWisconsin = null;
 
@@ -49,7 +50,7 @@ export default class WisconsinLandingPage extends Component {
 				<section
 					className="top-section"
 					style={{
-						background: `url(src/wisconsin/wisconsin-banner.jpg) center no-repeat`,
+						background: `url(${baseURL}/wisconsin/wisconsin-banner.jpg) center no-repeat`,
 						backgroundSize: 'cover',
 					}}
 				>

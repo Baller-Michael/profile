@@ -4,6 +4,7 @@ import { Button, Modal } from 'react-bootstrap';
 
 export default function SpeakersSection({ speakers, bgColor, title }) {
 	const [speakersModalKey, setSpeakersModalKey] = useState(null);
+	const baseURL = import.meta.env.BASE_URL;
 
 	const renderSpeakersModal = () => {
 		const speaker = speakers[speakersModalKey];
@@ -26,7 +27,7 @@ export default function SpeakersSection({ speakers, bgColor, title }) {
 						onClick={() => setSpeakersModalKey(null)}
 					/>
 					<div className="left-column">
-						<img src={`src/${speaker.imgSrc}`} alt={speaker.fullName} />
+						<img src={`${baseURL}/${speaker.imgSrc}`} alt={speaker.fullName} />
 					</div>
 					<div className="right-column">
 						<div className="modal-speaker-name">{speaker.fullName}</div>
@@ -48,7 +49,7 @@ export default function SpeakersSection({ speakers, bgColor, title }) {
 							<figure className="speakers-figure">
 								<div className="speakers-img-wrap">
 									<img
-										src={`src/${speaker.imgSrc}`}
+										src={`${baseURL}/${speaker.imgSrc}`}
 										alt={speaker.fullName}
 										className="speakers-img"
 									/>

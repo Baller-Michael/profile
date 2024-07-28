@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function CustomerWhatWeDo({ whatWeDo: { title, description, imgSrc }, joinButton, background }) {
     const staticSrcPrefix = null
+    const baseURL = import.meta.env.BASE_URL;
     return (
         <section className={`customer-about ${background ? 'container-color' : ''}`}>
             <div className="page-container">
@@ -20,7 +21,7 @@ export default function CustomerWhatWeDo({ whatWeDo: { title, description, imgSr
                     </figcaption>
                     <div className="customer-about-img-wrap">
                         <img
-                            src={`src/${imgSrc}`}
+                            src={`${baseURL}/${imgSrc}`}
                             alt={title}
                         />
                     </div>

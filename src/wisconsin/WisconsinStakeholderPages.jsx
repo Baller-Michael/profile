@@ -53,9 +53,10 @@ export default function WisconsinStakeholderPages() {
 	const userId = null;
 	const staticSrcPrefix = null;
 
-	const joinWisconsin = null
+	const joinWisconsin = null;
 
-	const joinWisconsinCommunity = null
+	const joinWisconsinCommunity = null;
+	const baseURL = import.meta.env.BASE_URL;
 
 	return (
 		<div className="wisconsin-page">
@@ -68,7 +69,7 @@ export default function WisconsinStakeholderPages() {
 			/> */}
 			<img
 				className={`landing-banner ${userId ? '' : '-not-logged-in'}`}
-				src={`src/wisconsin/stakeholders/banners/${activePage}-banner.jpg`}
+				src={`${baseURL}/wisconsin/stakeholders/banners/${activePage}-banner.jpg`}
 				alt={activePage}
 			/>
 			<WisconsinStakeholderTopSection

@@ -52,6 +52,7 @@ export default function CambridgeStakeholderPages() {
 		</Link>
 	);
 
+	const baseURL = import.meta.env.BASE_URL;
 	return (
 		<div className="cambridge-stakeholder-page cambridge-page wisconsin-page ">
 			{/* <CusomerHeader
@@ -63,7 +64,7 @@ export default function CambridgeStakeholderPages() {
 			/> */}
 			<img
 				className={`landing-banner ${userId ? '' : '-not-logged-in'}`}
-				src={`../../src/cambridge/stakeholders/${activePage}/${activePage}-header.jpg`}
+				src={`${baseURL}/cambridge/stakeholders/${activePage}/${activePage}-header.jpg`}
 				alt={activePage}
 			/>
 			<WisconsinStakeholderTopSection
