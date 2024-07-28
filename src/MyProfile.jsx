@@ -1,4 +1,7 @@
 import React from "react";
+import {
+  Link,
+} from "react-router-dom";
 
 export default function MyProfile() {
   const baseURL = import.meta.env.BASE_URL;
@@ -198,9 +201,9 @@ export default function MyProfile() {
               <div className="content">
                 <h2>Cambridge</h2>
                 <p></p>
-                <a href="/cam" className="info">
+                <Link to="/cam" className="info">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="work work-animation">
@@ -210,9 +213,9 @@ export default function MyProfile() {
               <div className="content">
                 <h2>Wisconsin</h2>
                 <p></p>
-                <a href="/uwmadison-cals" className="info">
+                <Link to="/uwmadison-cals" className="info">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
