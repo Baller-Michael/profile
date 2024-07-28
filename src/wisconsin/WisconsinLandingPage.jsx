@@ -16,6 +16,7 @@ export default class WisconsinLandingPage extends Component {
 	constructor(props) {
 		super(props);
 		document.title = 'Wisconsin';
+		window.scrollTo(0, 0);
 	}
 
 	render() {

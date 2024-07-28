@@ -13,6 +13,7 @@ export default function CambridgeStakeholderPages() {
 
 	useEffect(() => {
 		document.title = `${activePageContent.title}`;
+		window.scrollTo(0, 0);
 	}, [activePage]);
 
 	const userId = null;
@@ -27,7 +28,7 @@ export default function CambridgeStakeholderPages() {
 		quickFactsTitle,
 		offer,
 	} = activePageContent;
-	
+
 	if (!activePageContent) return null;
 	const joinCambridge = (
 		null
