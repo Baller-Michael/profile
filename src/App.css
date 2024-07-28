@@ -318,15 +318,6 @@ body {
     background-color: #951EFF;
   }
 
-  .about-parallax {
-    background-image: url("/profile/first-parallax.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100px;
-  }
-
   .about-me .page-container {
     display: flex;
     justify-content: space-between;
@@ -382,15 +373,6 @@ body {
   .year {
     margin: 10px 0;
     color: #951EFF;
-  }
-
-  .work-education {
-    background-image: url("/profile/work-education.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100px;
   }
 
   footer .page-container {

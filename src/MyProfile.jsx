@@ -17,18 +17,18 @@ export default function MyProfile() {
               <ul className="contacts">
                 <li className="email">
                   {/* <i className="fas fa-envelope"></i> */}
-                  <a href="">mihalu41998@gmail.com</a>
+                  <a href="mailto:mihalu41998@gmail.com">mihalu41998@gmail.com</a>
                 </li>
-                <li className="phone">
-                  {/* <i className="fas fa-phone"></i> */}
+                {/* <li className="phone">
+                  <i className="fas fa-phone"></i>
                   <a href="">0637227709</a>
-                </li>
+                </li> */}
                 <li className="address">
                   {/* <i className="fas fa-map-marker-alt"></i> */}
                   <a href="">Lviv, Ukraine</a>
                 </li>
               </ul>
-              <ul className="socials">
+              {/* <ul className="socials">
                 <li className="social">
                   <a href="" className="social-link">
                     <i className="fab fa-facebook-f"></i>
@@ -49,7 +49,7 @@ export default function MyProfile() {
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="column my-photo">
               <img
@@ -61,7 +61,6 @@ export default function MyProfile() {
           </div>
         </div>
       </section>
-      <div className="about-parallax"></div>
       <section className="about-me" id="about-me">
         <div className="page-container">
           <div className="img-container column">
@@ -94,12 +93,11 @@ export default function MyProfile() {
           </div>
         </div>
       </section>
-      <div className="work-education"></div>
       <section className="experience" id="education">
         <div className="page-container">
           <div className="column education">
             <h3>Education</h3>
-            <div className="study-card animated animatedFadeInUp fadeInUp">
+            {/* <div className="study-card animated animatedFadeInUp fadeInUp">
               <h4 className="name">Yevshan</h4>
               <p className="year">2007-2012</p>
               <p className="desription">
@@ -107,29 +105,23 @@ export default function MyProfile() {
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum
               </p>
-            </div>
+            </div> */}
             <div className="study-card animated animatedFadeInUp fadeInUp">
-              <h4 className="name">College</h4>
+              <h4 className="name">Technological professional college of National University Lviv Polytechnic</h4>
               <p className="year">2012-2016</p>
-              <p className="desription">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum
-              </p>
+              <b>Faculty:</b> Maintenance of computer systems and networks
             </div>
             <div className="study-card animated animatedFadeInUp fadeInUp">
-              <h4 className="name">NULP</h4>
-              <p className="year">2016-till today</p>
+              <h4 className="name">Lviv Polytechnic National University</h4>
+              <p className="year">2016-2022</p>
               <p className="desription">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum
+              <b>Faculty:</b> System analysis
               </p>
             </div>
           </div>
           <div className="column jobs">
             <h3>Work Experience</h3>
-            <div className="study-card animated animatedFadeInUp fadeInUp">
+            {/* <div className="study-card animated animatedFadeInUp fadeInUp">
               <h4 className="name">Tehno+</h4>
               <p className="year">2019-2020</p>
               <p className="desription">
@@ -137,15 +129,15 @@ export default function MyProfile() {
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum
               </p>
-            </div>
+            </div> */}
             <div className="study-card animated animatedFadeInUp fadeInUp">
-              <h4 className="name">KeenEthics</h4>
+              <h4 className="name">Keenethics</h4>
               <p className="year">2020-till today</p>
-              <p className="desription">
+              {/* <p className="desription">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
