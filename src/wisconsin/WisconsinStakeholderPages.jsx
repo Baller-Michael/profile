@@ -1,21 +1,15 @@
 import { useEffect } from 'react';
-import { Navigate, useLocation, useParams } from 'react-router-dom';
-import CusomerHeader from '../CustomerHeader.jsx';
+import { Navigate, useParams } from 'react-router-dom';
 import CustomerList from '../CustomerList.jsx';
-// import AccordionSection from '../../../components/accordion/AccordionSection.jsx';
-// import WisconsinFooter from './WisconsinFooter.jsx';
-import WisconsinStakeholderTopSection from './WisconsinStakeholderTopSection.jsx';
 import WisconsinFooter2 from './WisconsinFooter2.jsx';
+import WisconsinStakeholderTopSection from './WisconsinStakeholderTopSection.jsx';
 import {
-	stakeholdersPagesContent,
 	stakeholdersPages,
-	faqs,
-	keyFeatures,
+	stakeholdersPagesContent
 } from './wisconsin-content';
 // import JoinNowButton from '../../../components/join-now-button/JoinNowButton.jsx';
 
 export default function WisconsinStakeholderPages() {
-	const location = useLocation();
 	const { activePage } = useParams();
 	const activePageContent = stakeholdersPagesContent[activePage];
 
@@ -28,17 +22,7 @@ export default function WisconsinStakeholderPages() {
 		return <Navigate to="/uwmadison-cals" replace />;
 	}
 
-	const entityToJoin = {
-		title: 'UW-Madison, CALS',
-		_id: 'oSAHt3WbgvTcD6Z86',
-		entityType: 'page',
-	};
-
-	const logoSrc = 'src/wisconsin/wisconsin-logo.png';
-	const mobileLogoSrc = 'src/wisconsin/mobile-wisconsin-logo.png';
-	const winsconsinBtnClass = 'wisconsin-feature-red';
 	const stakeholderTitleClass = 'stakeholder-title';
-	const mainLink = '/uwmadison-cals';
 
 	const {
 		title,
@@ -51,7 +35,6 @@ export default function WisconsinStakeholderPages() {
 	} = activePageContent;
 
 	const userId = null;
-	const staticSrcPrefix = null;
 
 	const joinWisconsin = null;
 

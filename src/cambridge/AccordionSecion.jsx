@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import _ from 'lodash';
-import { Button, Collapse, DropdownButton, Dropdown } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { Button, Collapse, Dropdown, DropdownButton } from 'react-bootstrap';
 import AutoplayVideo from '../video/AutoplayVideo.jsx';
 
 export default class AccordionSection extends Component {

@@ -51,7 +51,7 @@ export default function MyProfile() {
             <div className="column my-photo">
               <img
                 src={`${baseURL}/profile.png`}
-                alt="Micahel Pavelchuk"
+                alt="Michael Pavelchuk"
                 className="michael-photo-1"
               />
             </div>
@@ -236,7 +236,7 @@ export default function MyProfile() {
         </section> */}
       <footer>
         <div className="page-container">
-          <p>&copy; Micahel Pavelchuk 2020</p>
+          <p>&copy; Michael Pavelchuk 2024</p>
           <ul className="socials">
             <li className="social">
               <a href="" className="social-link">

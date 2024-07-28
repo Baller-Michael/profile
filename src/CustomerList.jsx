@@ -1,7 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function CustomerList({
 	content: { title, list },
@@ -10,7 +10,6 @@ export default function CustomerList({
 	activePage,
 	btnName,
 }) {
-	const staticSrcPrefix = null;
 	const baseURL = import.meta.env.BASE_URL;
 	return (
 		<section className="communities">

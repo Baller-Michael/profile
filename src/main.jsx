@@ -2,10 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import {
   BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
   Route,
-  Routes,
+  Routes
 } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";

@@ -113,7 +113,7 @@ export default class WisconsinFooter2 extends Component {
 						rel="nofollow noopener noreferrer"
 						className="copyright"
 					>
-						&copy;2020 Board of Regents of the University of Wisconsin System
+						&copy;2024 Board of Regents of the University of Wisconsin System
 					</a>
 				</div>
 			</div>

@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function CustomerHeader({
 	logoSrc,
-	btnClass,
 	mainLink,
-	entityToJoin,
 	mobileLogoSrc,
-	communityLink,
 }) {
 	const [headerWithBoxShadow, setHeaderWithBoxShadow] = useState(false);
 	const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 550);
@@ -40,11 +36,7 @@ export default function CustomerHeader({
 		};
 	}, []);
 
-	const showLogin = tab => {return null
-	};
-
 	const userId = null;
-	const staticSrcPrefix = null;
 	const baseURL = import.meta.env.BASE_URL;
 
 	return (

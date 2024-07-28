@@ -269,7 +269,7 @@ export default class WisconsinFooter extends Component {
 				<div id="uw-footer-notices">
 					<p className="uw-full-row">
 						<span id="uw-footer-copyright">
-							&copy;2020 Board of Regents of{' '}
+							&copy;2024 Board of Regents of{' '}
 							<span id="uw-footer-divider-tiny">
 								<br />
 							</span>

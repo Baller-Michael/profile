@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import CusomerHeader from '../CustomerHeader.jsx';
-import CustomerWhatWeDo from '../CustomerWhatWeDo.jsx';
-import CustomerList from '../CustomerList.jsx';
 import CustomerCommunities from '../CustomerCommunities.jsx';
+import CustomerList from '../CustomerList.jsx';
+import CustomerWhatWeDo from '../CustomerWhatWeDo.jsx';
 import WisconsinFooter2 from './WisconsinFooter2.jsx';
 
 import {
+	description,
 	ourCommunityTo,
+	stakeholdersPages,
 	topSection,
 	whatWeDo,
-	description,
-	stakeholdersPages,
 } from './wisconsin-content';
 
 export default class WisconsinLandingPage extends Component {
@@ -20,18 +19,6 @@ export default class WisconsinLandingPage extends Component {
 	}
 
 	render() {
-		const entityToJoin = {
-			title: 'UW-Madison, CALS',
-			_id: 'oSAHt3WbgvTcD6Z86',
-			entityType: 'page',
-		};
-		const userId = null;
-		const staticSrcPrefix = null;
-
-		const logoSrc = 'src/wisconsin/wisconsin-logo.png';
-		const mobileLogoSrc = 'src/wisconsin/mobile-wisconsin-logo.png';
-		const winsconsinBtnClass = 'wisconsin-feature-red';
-		const mainLink = '/uwmadison-cals';
 
 		const { title, titleDescription } = topSection;
 		const baseURL = import.meta.env.BASE_URL;
@@ -69,7 +56,6 @@ export default class WisconsinLandingPage extends Component {
 				<CustomerWhatWeDo whatWeDo={whatWeDo} joinButton={joinWisconsin} />
 				<CustomerList content={ourCommunityTo} joinButton={joinWisconsin} />
 				<CustomerCommunities communities={stakeholdersPages.list} />
-				{/* <WisconsinFooter /> */}
 				<WisconsinFooter2 />
 			</div>
 		);

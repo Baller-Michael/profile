@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function CustomerCommunities({ activeCommunity, communities }) {
-	const staticSrcPrefix = null;
 	const baseURL = import.meta.env.BASE_URL;
 	return (
 		<section className="customer-communities">

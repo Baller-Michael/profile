@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import { Link, useParams, useNavigate } from 'react-router-dom';
-import CusomerHeader from '../CustomerHeader.jsx';
+import { Link, useParams } from 'react-router-dom';
 import CustomerList from '../CustomerList.jsx';
 // import AccordionSection from '../AccordionSection.jsx';
 import WisconsinStakeholderTopSection from '../wisconsin/WisconsinStakeholderTopSection.jsx';
 import CambridgeFooter from './CambridgeFooter.jsx';
-import { stakeholdersPagesContent, stakeholdersPages, keyFeatures } from './cambridge-content';
+import { stakeholdersPages, stakeholdersPagesContent } from './cambridge-content';
 
 export default function CambridgeStakeholderPages() {
 	const { activePage } = useParams();
@@ -17,17 +16,7 @@ export default function CambridgeStakeholderPages() {
 	}, [activePage]);
 
 	const userId = null;
-	const staticSrcPrefix = null;
 	const stakeholderTitleClass = 'stakeholder-title';
-	const logoSrc = '/cambridge/cambridge-logo.jpg';
-	const mobileLogoSrc = '/cambridge/mobile-cambridge-logo.png';
-	const cambridgeBtnClass = 'cambridge-feature-red';
-	const mainLink = '/cam/enterprise-zone';
-	const entityToJoin = {
-		title: 'Cambridge',
-		_id: 'qL9BjwCsvjFQQbWXk',
-		entityType: 'page',
-	};
 
 	const {
 		title,
@@ -38,7 +27,7 @@ export default function CambridgeStakeholderPages() {
 		quickFactsTitle,
 		offer,
 	} = activePageContent;
-	console.log('777activePageContent:', activePageContent);
+	
 	if (!activePageContent) return null;
 	const joinCambridge = (
 		null

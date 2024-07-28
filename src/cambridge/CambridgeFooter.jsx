@@ -41,7 +41,7 @@ export default class CambridgeFooter extends PureComponent {
 									alt="Cambridge University"
 								/>
 							</a>{' '}
-							<p> © 2020 University of Cambridge</p>
+							<p> © 2024 University of Cambridge</p>
 							<ul className="cam-unstyled-list cam-global-footer-links">
 								<li>
 									<a
@@ -314,7 +314,7 @@ export default class CambridgeFooter extends PureComponent {
 									alt="Cambridge University"
 								/>
 							</a>{' '}
-							<p> © 2020 University of Cambridge</p>
+							<p> © 2024 University of Cambridge</p>
 							<ul className="cam-unstyled-list cam-global-footer-links">
 								<li>
 									<a

@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import CusomerHeader from '../CustomerHeader.jsx';
-import CustomerWhatWeDo from '../CustomerWhatWeDo.jsx';
-import CustomerList from '../CustomerList.jsx';
 import CustomerCommunities from '../CustomerCommunities.jsx';
+import CustomerList from '../CustomerList.jsx';
+import CustomerWhatWeDo from '../CustomerWhatWeDo.jsx';
 import CambridgeFooter from './CambridgeFooter.jsx';
 
 import {
+	infoText,
 	ourCommunityTo,
+	stakeholdersPages,
 	topSection,
 	whatWeDo,
-	stakeholdersPages,
-	infoText,
 } from './cambridge-content';
 
 export default class CambridgeLandingPage extends Component {
@@ -22,18 +21,6 @@ export default class CambridgeLandingPage extends Component {
 
 	render() {
 		const baseURL = import.meta.env.BASE_URL;
-		const userId = null;
-		const staticSrcPrefix = null;
-
-		const logoSrc = '/cambridge/cambridge-logo.jpg';
-		const mobileLogoSrc = '/cambridge/mobile-cambridge-logo.png';
-		const cambridgeBtnClass = 'cambridge-feature-red';
-		const mainLink = '/cam/enterprise-zone';
-		const entityToJoin = {
-			title: 'Cambridge',
-			_id: 'qL9BjwCsvjFQQbWXk',
-			entityType: 'page',
-		};
 
 		const { title, subTitle, titleDescription } = topSection;
 

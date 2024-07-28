@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 
 export default function CustomerWhatWeDo({ whatWeDo: { title, description, imgSrc }, joinButton, background }) {
-    const staticSrcPrefix = null
     const baseURL = import.meta.env.BASE_URL;
     return (
         <section className={`customer-about ${background ? 'container-color' : ''}`}>

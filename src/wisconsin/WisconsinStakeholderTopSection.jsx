@@ -1,5 +1,5 @@
 import React from 'react';
-import WisconsinOffers from './WisconsinOffers.jsx'
+import WisconsinOffers from './WisconsinOffers.jsx';
 
 export default function WisconsinStakeholderTopSection({ title, topSectionDescription, quickFacts, quickFactsTitle, joinButton, offer, learnMore }) {
     return (
